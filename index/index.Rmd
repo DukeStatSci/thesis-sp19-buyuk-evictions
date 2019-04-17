@@ -40,9 +40,7 @@ csl: csl/apa.csl
 # Download your specific csl file and refer to it in the line above.
 lot: true
 lof: true
-#space_between_paragraphs: true
-# Delete the # at the beginning of the previous line if you'd like
-# to have a blank new line between each paragraph
+space_between_paragraphs: true
 #header-includes:
 #- \usepackage{tikz}
 ---
@@ -80,18 +78,19 @@ and 00-abstract.Rmd since they are handled in the YAML above differently for the
 on chapters.
 -->
 
-# Introduction {.unnumbered}
+# Abstract {-}
 
-Welcome to the _R Markdown_ thesis template. This template is based on (and in many places copied directly from) the Reed College LaTeX template, but hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before.  Using _R Markdown_ will also allow you to easily keep track of your analyses in **R** chunks of code, with the resulting plots and output included as well.  The hope is this _R Markdown_ template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
+This thesis investigates the changes in the ownership of multi-family rental complexes in Durham between 2000 and 2018 and their subsequent impact on housing stability. Specifically, I model and compare the likelihood that an eviction filing is issued by corporate and individual landlords in the periods before and after a transaction. Since the early 2000s, institutional investor share in all property sizes has increased dramatically in the United States. In 2013, the Blackstone Group released the first-ever rated bond backed by single-family securitized rental payments, and since then, numerous firms have followed with similar security offerings, which as of 2018 include bonds backed by multi-family rental income. The surge of institutional investment in multi-family rental properties and its impacts on communities have remained largely ignored in academic literature. Durham County currently holds one of the highest eviction rates in North Carolina and ranks in the top 40 of highest evicting large cities in the United States. In my thesis, I uncover how ownership of rental properties in Durham has changed since the early 2000s and investigate whether the behaviors of "corporate landlords" differ significantly from those of individual investors (or “mom and pop” landlords”). I find that the proportion of properties under corporate ownership has increased across all property sizes since 2000, and the proportion of corporate owners that are based out-of-state has also increased. I also find evidence to suggest that different sizes of multi-family properties should be examined distinctly, as I uncover different trends across property sizes in both ownership and eviction rates. Using a fixed effects model, I find that overall, individuals appear to have a higher likelihood of filing an eviction against a tenant compared to institutional landlords in the months before and after a transaction. Finally, I find that large investors amongst both corporates and individuals, defined as investors that own more than 15 properties in Durham, are significantly more likely to evict than smaller investors are. 
 
-Hopefully, you won't have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis.  The use of LaTeX in combination with _Markdown_ is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be about twice as large and complex as anything you've written before, taxing Word's capabilities.  After working with _Markdown_ and **R** together for a few weeks, we are confident this will be your reporting style of choice going forward.
+*Keywords*: Housing stability, real-estate, multi-family rental market, institutional investor, corporate landlord
 
-**Why use it?**
+## Acknowledgements {-}
 
-_R Markdown_ creates a simple and straightforward way to interface with the beauty of LaTeX.  Packages have been written in **R** to work directly with LaTeX to produce nicely formatting tables and paragraphs. In addition to creating a user friendly interface to LaTeX, _R Markdown_ also allows you to read in your data, to analyze it and to visualize it using **R** functions, and also to provide the documentation and commentary on the results of your project.  Further, it allows for **R** results to be passed inline to the commentary of your results.  You'll see more on this later.  
+I would like to begin by thanking my professors, Professor Christopher Timmins, Professor Colin Rundel and Professor Grace Kim. Thank you to Professor Timmins for your support and guidance at all hours of the day, and for constantly challenging me to think critically about the questions I was asking and the methodology I was using. It was a pleasure working with you this year, and I learned so much from you. Thank you to Professor Rundel for your wisdom and patience. I did not realize that pursuing research was not only an academic pursuit but also a huge emotional undertaking, and your insight and calming presence was so critical in this process. Thank you for listening to every idea I had with an open-mind, and walking with me through the detailed processes necessary to get answers to each of these curiosities. Thank you also to Professor Grace Kim for your feedback and your constant support of my winding research path, as well as of my career throughout Duke. 
+Thank you to John Killeen at DataWorks. Without your trust in me to pursue this research question with the care it deserves, this research would not have been possible. Thank you for all of the brainstorming sessions and hours spent investigating imperfect data problems. I learned so much through your mentorship. 
+Thank you to the Durham Sherriff’s Department and Durham Tax Administration for letting me work with this data in my thesis. Finally, thank you to all of the friends who have kept me sane as I panicked about this research project: Anna-Karin Hess, David Pfeiffer, and Juan Philippe, I could not have done this without your support! 
 
-Having your code and commentary all together in one place has a plethora of benefits!
 
-**Who should use it?**
+## Dedication {-}
 
-Anyone who needs to use data analysis, math, tables, a lot of figures, complex cross-references, or who just cares about the final appearance of their document should use _R Markdown_. Of particular use should be anyone in the sciences, but the user-friendly nature of _Markdown_ and its ability to keep track of and easily include figures, automatically generate a table of contents, index, references, table of figures, etc. should make it of great benefit to nearly anyone writing a thesis project.
+I would like to dedicate my thesis to my dad, who enjoys doing research as a fun hobby and inspired me to think that I might be the same. Guess this is one of the few ways that we are different, dad!
