@@ -1,6 +1,6 @@
 # Literary Review
 
-## Backround 
+## Background 
 
 Durham County currently has a population of over 300,000 residents. Since 2000, the population has increased a whopping 50%, two-thirds of which is attributable to the heavy influx of new residents. 85% of the Durham population currently lives in the city of Durham. According to Mayor Steve Schewel, in 2018, the city of Durham saw an influx of 20 new residents every single day. That adds up to approximately 7,000 people each year, which places Durham as the fourth highest city in people moving in, per capita, in North Carolina (Krueger, 2018).  
 
