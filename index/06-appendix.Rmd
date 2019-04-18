@@ -1,24 +1,73 @@
-`r if(knitr:::is_latex_output()) '\\appendix'`
+# Appendix {-}
 
-`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
+## Appendix A: Corporate and Individual Transactions - 6-Month Windows
 
-<!--
-If you feel it necessary to include an appendix, it goes here.
--->
-
-
-# The First Appendix
-
-This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.
-
-**In the main Rmd file**
-
-```{r ref.label='include_packages', results='hide', echo = TRUE}
+```{r, fig.cap="Eviction Likelihoods in All Properties"}
+library(knitr)
+include_graphics(path = "Figures/A1.png")
 ```
 
-**In Chapter \@ref(ref-labels):**
-
-```{r ref.label='include_packages_2', results='hide', echo = TRUE}
+```{r, fig.cap="Eviction Likelihoods in Tiny Properties (2-4 Units)"}
+include_graphics(path = "Figures/A2.png")
 ```
 
-# The Second Appendix, for Fun
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Tiny Property Transactions"}
+include_graphics(path = "Figures/A3.png")
+```
+
+```{r, fig.cap="Eviction Likelihoods in Medium & Small Properties (5-49 Units)"}
+include_graphics(path = "Figures/A4.png")
+```
+
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Medium & Small Property Transactions"}
+include_graphics(path = "Figures/A5.png")
+```
+
+```{r, fig.cap="Eviction Likelihoods in Largest Properties (50+ Units)"}
+include_graphics(path = "Figures/A6.png")
+```
+
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Large Property Transactions"}
+include_graphics(path = "Figures/A7.png")
+```
+
+```{r, fig.cap="Eviction Likelihoods Without LLC, LP or LLPs Considered (Robustness Check)"}
+include_graphics(path = "Figures/A8.png")
+```
+
+## Appendix B: Out-of-State and In-State Corporate Transactions - 6-Month Window
+
+```{r, fig.cap="Eviction Likelihoods in All Properties"}
+include_graphics(path = "Figures/B1.png")
+```
+
+```{r, fig.cap="Eviction Likelihoods in Tiny Properties (2-4 Units)"}
+include_graphics(path = "Figures/B2.png")
+```
+
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Tiny Property Transactions"}
+include_graphics(path = "Figures/B3.png")
+```
+
+```{r, fig.cap="Eviction Likelihoods in Medium & Small Properties (5-49 Units)"}
+include_graphics(path = "Figures/B4.png")
+```
+
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Medium & Small Property Transactions"}
+include_graphics(path = "Figures/B5.png")
+```
+
+```{r, fig.cap="Eviction Likelihoods in Largest Properties (50+ Units)"}
+include_graphics(path = "Figures/B6.png")
+```
+
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Large Property Transactions"}
+include_graphics(path = "Figures/B7.png")
+```
+
+## Appendix C: Large and Small Investor Transactions (6-Month Window)
+
+```{r, fig.cap="Eviction Likelihoods Across All Properties"}
+include_graphics(path = "Figures/C1.png")
+```
+
