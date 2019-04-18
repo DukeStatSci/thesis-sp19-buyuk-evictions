@@ -15,9 +15,9 @@ title: 'Landlords and Evictions: Changes in the Ownership of Multi-Family Rental
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 #output: 
-#  thesisdowndss::thesis_gitbook: default
+#  thesisdown::thesis_gitbook: default
 abstract: |
-  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+  
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
 # needed on the line after the |.
@@ -44,19 +44,7 @@ If you'd like to include a comment that won't be produced in your resulting file
 If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
 -->
 
-```{r include_packages, include = FALSE}
-# This chunk ensures that the thesisdowndss package is
-# installed and loaded. This thesisdowndss package includes
-# the template files for the thesis.
-if(!require(devtools))
-  install.packages("devtools", repos = "http://cran.rstudio.com")
 
-if(!require(thesisdowndss))
-  devtools::install_github("mine-cetinkaya-rundel/thesisdowndss", force=TRUE)
-library(thesisdowndss)
-knitr::opts_chunk$set(echo=FALSE, warning=F, message=F, fig.align="center")
-options(warn = -1)
-```
 
 <!-- You'll need to include the order that you'd like Rmd files to appear in the _bookdown.yml file for
 PDF files and also delete the # before rmd_files: there.  You'll want to not include 00(two-hyphens)prelim.Rmd
