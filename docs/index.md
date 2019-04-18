@@ -15,7 +15,7 @@ title: 'Landlords and Evictions: Changes in the Ownership of Multi-Family Rental
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 #output: 
-#  thesisdown::thesis_gitbook: default
+#  thesisdowndss::thesis_gitbook: default
 abstract: |
   
 # If you'd rather include the preliminary content in files instead of inline
