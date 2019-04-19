@@ -1,3 +1,4 @@
+
 # Empirical Specifications 
 
 I am interested in the changes in the likelihood of an eviction filing based on a change in ownership at a parcel, so I use a regression discontinuity to model this problem. Specifically, I am interested in whether the eviction rates in the post-transaction period are significantly different than rates in the pre-transaction period for various types of ownership changes. I consider the transaction to occur at time, t = 0, eviction rates in the pre-period to occur at time, t < 0 and eviction rates in the post-period to occur at time, t > 0.  
