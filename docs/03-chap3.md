@@ -132,10 +132,7 @@ In Figure \@ref(fig:evicrates), I present the changes in average eviction rates 
 include_graphics(path = "Figures/FINALevicratesatsizes.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALevicratesatsizes.jpeg" alt="Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018" width="500" />
-<p class="caption">Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018</p>
-</div>
+![Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018](Figures/FINALevicratesatsizes.jpeg)
 
 First, it is evident that year is intimately related with eviction filing rates. Across all property sizes, we clearly see the elevated rates of eviction filings in the years leading up to the financial crisis, and the precipitous drop in eviction filing rates after 2011. We also see that these eviction rates vary quite drastically across different dwelling unit sizes, and the distributions of the eviction rates across time is also varied. Specifically, in the largest dwelling units, the max average eviction rate is a little under 3.5 percent, whereas in the tiniest dwelling units, the max average eviction rate reaches 10 percent.  
 
@@ -150,10 +147,7 @@ Next, I look at how eviction rates differ across racial and economic variables. 
 include_graphics(path = "Figures/FINALdemsgraphtract.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALdemsgraphtract.jpeg" alt="The Impact of Eviction Rates on Different Demographics" width="400" />
-<p class="caption">The Impact of Eviction Rates on Different Demographics</p>
-</div>
+![The Impact of Eviction Rates on Different Demographics](Figures/FINALdemsgraphtract.jpeg)
 
 I find that the higher the percentage of African American residents and Hispanic residents in a tract, the higher the average eviction rate is. I also find that the eviction rate is slightly higher in more impoverished neighborhoods. Finally, the higher the percentage of white residents in a tract, the lower the average eviction rate is on average across tracts. It becomes clear through these graphs that demographics and eviction rates are highly correlated in Durham.
 
@@ -208,10 +202,7 @@ Next, I look at how the ownership of rental properties in Durham have changed si
 include_graphics(path = "Figures/poster1.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/poster1.jpeg" alt="Proportion of Properties Under Corporate Ownership Across Different Property Sizes" width="600" />
-<p class="caption">Proportion of Properties Under Corporate Ownership Across Different Property Sizes</p>
-</div>
+![Proportion of Properties Under Corporate Ownership Across Different Property Sizes](Figures/poster1.jpeg)
 
 Next, I look to see how ownership amongst corporate owners has changed: specifically, I am interested to see if more owners are based out-of-state. In Figure \@ref(fig:statechanges), we can see that the proportion of properties under corporate ownership that are based out-of-state has increased across all property sizes other than the smallest units, where it has stayed the same. In the largest property size, the proportion of properties owned by out-of-state corporates has risen from around 62 percent in 2000 to 80 percent in 2018. In the small and medium property sizes, out-of-state ownership has more than doubled from around 10 – 15 percent in 2000 to around 30 – 40 percent by 2018.
 
@@ -220,9 +211,6 @@ Next, I look to see how ownership amongst corporate owners has changed: specific
 include_graphics(path = "Figures/posteroutofstatefinal.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/posteroutofstatefinal.jpeg" alt="Proportion of Corporate Ownership Based Out-of-State  " width="600" />
-<p class="caption">Proportion of Corporate Ownership Based Out-of-State  </p>
-</div>
+![Proportion of Corporate Ownership Based Out-of-State  ](Figures/posteroutofstatefinal.jpeg)
 
 Overall, there is concrete evidence that the composition of multi-family landlords in Durham has changed.  In both of these graphs, we can see that the most drastic changes in ownership are occurring in the small and medium sized property units, though almost all property sizes are impacted in some way. 

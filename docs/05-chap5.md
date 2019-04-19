@@ -36,10 +36,7 @@ library(knitr)
 include_graphics(path = "Figures/FINALcorpindivtransrobus.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALcorpindivtransrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="400" />
-<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
-</div>
+![Sensitivity Analysis: Considering Different Transaction Windows](Figures/FINALcorpindivtransrobus.jpeg)
 
 I also check the robustness of this result by excluding LLP, LP and LLCs since it is not always clear whether these observations trace to individuals or corporates. In this model, the results also suggest that individuals are more likely to evict than corporates. A full output of the regression is presented in Appendix A, Table A7. 
 
@@ -50,10 +47,7 @@ Finally, in Figure \@ref(fig:yearres1), we see that the fixed effect, Year, is m
 include_graphics(path = "Figures/FINALyearfitcorpindiv.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALyearfitcorpindiv.jpeg" alt="Fixed Effect: Year" width="400" />
-<p class="caption">Fixed Effect: Year</p>
-</div>
+![Fixed Effect: Year](Figures/FINALyearfitcorpindiv.jpeg)
 
 I also check the robustness of these results across different property sizes. As seen in Figure \@ref(fig:evicrates) in my data section, the range of average eviction rates differs across property sizes: specifically, the tiniest properties boast the largest range in eviction rates while the largest properties boast the smallest range. As seen in Figure \@ref(fig:corpchanges) in my data section, corporates own the largest properties while individuals own the smallest properties. Thus, I worry it may be the case that corporates seem more likely to evict simply because they own higher proportions of properties with smaller eviction rates.  
 
@@ -107,20 +101,14 @@ Similar to the first regression, the coefficient on the Percentage African Ameri
 include_graphics(path = "Figures/FINALoutintransrobust.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALoutintransrobust.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="400" />
-<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
-</div>
+![Sensitivity Analysis: Considering Different Transaction Windows](Figures/FINALoutintransrobust.jpeg)
 
 
 ```r
 include_graphics(path = "Figures/FINALstateyeareffect.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALstateyeareffect.jpeg" alt="Fixed Effect: Year" width="400" />
-<p class="caption">Fixed Effect: Year</p>
-</div>
+![Fixed Effect: Year](Figures/FINALstateyeareffect.jpeg)
 
 Furthermore, from \@ref(fig:yearres2), we see that the year is again important. With Year = 2004 as the baseline, we can see that eviction filings were twice as likely in 2008 than they were in almost all other years.  
 
@@ -174,17 +162,11 @@ I consider the robustness of this result across different cutoff sizes for a lar
 include_graphics(path = "Figures/FINALcutoffsrobustness.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALcutoffsrobustness.jpeg" alt="Sensitivity Analysis: Considering Different Cut-offs for Large Investor" width="400" />
-<p class="caption">Sensitivity Analysis: Considering Different Cut-offs for Large Investor</p>
-</div>
+![Sensitivity Analysis: Considering Different Cut-offs for Large Investor](Figures/FINALcutoffsrobustness.jpeg)
 
 
 ```r
 include_graphics(path = "Figures/FINALlargesmalltranswindowrobus.jpeg")
 ```
 
-<div class="figure">
-<img src="Figures/FINALlargesmalltranswindowrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="400" />
-<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
-</div>
+![Sensitivity Analysis: Considering Different Transaction Windows](Figures/FINALlargesmalltranswindowrobus.jpeg)
