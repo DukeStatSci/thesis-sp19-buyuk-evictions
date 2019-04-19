@@ -49,69 +49,6 @@
 
 
 
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 </head>
 
@@ -248,18 +185,19 @@ Income</td>
 <p>Table <a href="5-results.html#tab:res1">5.1</a> presents summary statistics for Betas 1 through 5. Specifically, Betas 1, 3, 4 and 5 are statistically significant and Betas 1, 3 and 4 can be deemed practically significant. We can interpret the first row in Table 5 as follows: The likelihood of a corporate evicting a tenant in the pre-transaction period is 0.25x a likely as an individual evicting a tenant in the pre-transaction period, with a confidence interval between 0.23 and 0.28, which is statistically significant because it does not include 1. In other words, an individual is 4x as likely to evict a tenant than a corporate is in the pre-transaction period. Furthermore, a corporate is 0.28x as likely to evict a tenant in the post-transaction period as an individual is in the pre-transaction period. Thus, the likelihood of a corporate filing for eviction against a tenant in both the post and pre-transaction period is lower than an individual’s likelihood of filing for eviction in the pre-transaction period. This finding is statistically significant.</p>
 <p>We can also see that the higher the percentage of African American residents in a tract, the higher the likelihood of eviction. The magnitude of the coefficient on this variable suggests that the likelihood of an eviction is highly related to a higher percentage of African American residents. Lastly, while household income is statistically significant and suggests that poorer neighbors have a higher likelihood of experiencing eviction, it is not a practically significant predictor.</p>
 <p>Next, I conduct a sensitivity analysis considering different transaction windows (Figure <a href="#fig:transres1"><strong>??</strong></a>). I find that overall, there is not a significant difference in the log-odds of the coefficients over time. Most importantly, we can see that the coefficient on the corporate owner is significantly below “1” across all periods, suggesting that the likelihood of an eviction by a corporate is consistently lower than the likelihood of eviction by an individual.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(knitr)
-<span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALcorpindivtransrobus.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALcorpindivtransrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" />
-<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALcorpindivtransrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="600px" />
+<p class="caption">
+Sensitivity Analysis: Considering Different Transaction Windows
+</p>
 </div>
 <p>I also check the robustness of this result by excluding LLP, LP and LLCs since it is not always clear whether these observations trace to individuals or corporates. In this model, the results also suggest that individuals are more likely to evict than corporates. A full output of the regression is presented in Appendix A, Table A7.</p>
 <p>Finally, in Figure <a href="#fig:yearres1"><strong>??</strong></a>, we see that the fixed effect, Year, is meaningful. As expected, in the years of the financial crisis, we see higher likelihoods of eviction than we do in other years. Furthermore, we see that in 2018, specifically, the likelihood of an eviction has risen again.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALyearfitcorpindiv.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALyearfitcorpindiv.jpeg" alt="Fixed Effect: Year" />
-<p class="caption">Fixed Effect: Year</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALyearfitcorpindiv.jpeg" alt="Fixed Effect: Year" width="600px" />
+<p class="caption">
+Fixed Effect: Year
+</p>
 </div>
 <p>I also check the robustness of these results across different property sizes. As seen in Figure <a href="#fig:evicrates"><strong>??</strong></a> in my data section, the range of average eviction rates differs across property sizes: specifically, the tiniest properties boast the largest range in eviction rates while the largest properties boast the smallest range. As seen in Figure <a href="#fig:corpchanges"><strong>??</strong></a> in my data section, corporates own the largest properties while individuals own the smallest properties. Thus, I worry it may be the case that corporates seem more likely to evict simply because they own higher proportions of properties with smaller eviction rates.</p>
 <p>To determine the robustness of the results, I fit the model for large, medium and small, and tiny dwelling unit property sizes, separately. I consider my medium and small property sizes together since the ranges of eviction rates for these two property sizes are comparable. I present the summary statistics of my findings for the log-odds of the corporate categorical variable below, and a full summary of each of the regression results are presented in Appendix A, Tables A2 – A6.</p>
@@ -364,15 +302,17 @@ Income</td>
 </table>
 <p>Table <a href="5-results.html#tab:res2">5.3</a> presents summary statistics for Betas 1 through 5. Specifically, Betas 1, 3, 4 and 5 are statistically significant while Betas 1, 3 and 4 can be deemed practically significant. The baseline, or likelihood of “1” is the in-state corporation’s likelihood of evicting a tenant in the pre-transaction period. According to Table 7, the likelihood of an out-of-state corporate filing for eviction against a tenant in both the post and pre-transaction period is lower than an in-state corporate’s likelihood in the pre-transaction period. Specifically, the likelihood of an out-of-state corporation filing for eviction in the pre-transaction period is 0.61x the likelihood of an in-state corporation filing for eviction. In other words, an in-state corporation is more likely to file for eviction.</p>
 <p>Similar to the first regression, the coefficient on the Percentage African American variable is large and positive, while the average household income variable, while statistically significant, is not practically meaningful. Based on the sensitivity analysis across transaction windows (see Figure <a href="#fig:transres2"><strong>??</strong></a>), we can see that the coefficient on the corporate owner is significantly below “1” across all periods again, suggesting that this finding is robust. Because the confidence intervals of the other coefficients include 1, we cannot argue that owners evict more in either the pre or post period of a transaction.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALoutintransrobust.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALoutintransrobust.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" />
-<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALoutintransrobust.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="600px" />
+<p class="caption">
+Sensitivity Analysis: Considering Different Transaction Windows
+</p>
 </div>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALstateyeareffect.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALstateyeareffect.jpeg" alt="Fixed Effect: Year" />
-<p class="caption">Fixed Effect: Year</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALstateyeareffect.jpeg" alt="Fixed Effect: Year" width="600px" />
+<p class="caption">
+Fixed Effect: Year
+</p>
 </div>
 <p>Furthermore, from <a href="#fig:yearres2"><strong>??</strong></a>, we see that the year is again important. With Year = 2004 as the baseline, we can see that eviction filings were twice as likely in 2008 than they were in almost all other years.</p>
 <p>To test for robustness, I fit the model for large, medium and small, and tiny dwelling unit property sizes once more. I present the summary statistics of my findings for the coefficient of the out-of-state categorical variable below, and a full summary of each of the regression results are presented in Appendix B, Tables B2 – B6.</p>
@@ -477,15 +417,17 @@ Income</td>
 </table>
 <p>As we can see from Table <a href="5-results.html#tab:res3">5.5</a>, large investors, defined as corporates or individuals holding more than 15 multi-family properties in Durham, have a higher likelihood of evicting tenants than smaller investors in the pre-transaction period. In the pre-transaction period, large investors are 3.16x as likely to evict and in the post-transaction period, large investors are 2.45x as likely to evict as small investors are in the pre-transaction period. There is no statistically significant evidence to suggest that small investors have different eviction rates in the pre and post transaction periods.</p>
 <p>I consider the robustness of this result across different cutoff sizes for a large investor. I start with a lower bound set at ownership of 10 properties. As seen in Figure <a href="#fig:robusres3"><strong>??</strong></a> below, my findings are robust across all different investor size cut-offs. I also consider the robustness of these results across different transaction windows, and again find that the coefficient on the large investor is robust (Figure <a href="#fig:transres3"><strong>??</strong></a>). I do not consider different property sizes in this case since I calculate investor size by the total number of multi-family complexes owned by an entity, so divvying up by property size does not make sense for this analysis.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALcutoffsrobustness.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALcutoffsrobustness.jpeg" alt="Sensitivity Analysis: Considering Different Cut-offs for Large Investor" />
-<p class="caption">Sensitivity Analysis: Considering Different Cut-offs for Large Investor</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALcutoffsrobustness.jpeg" alt="Sensitivity Analysis: Considering Different Cut-offs for Large Investor" width="600px" />
+<p class="caption">
+Sensitivity Analysis: Considering Different Cut-offs for Large Investor
+</p>
 </div>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALlargesmalltranswindowrobus.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALlargesmalltranswindowrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" />
-<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALlargesmalltranswindowrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="600px" />
+<p class="caption">
+Sensitivity Analysis: Considering Different Transaction Windows
+</p>
 </div>
 
 </div>

@@ -49,69 +49,6 @@
 
 
 
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 </head>
 
@@ -402,19 +339,21 @@ Units)</td>
 <div id="evictions-in-durham" class="section level2">
 <h2><span class="header-section-number">3.4</span> Evictions in Durham</h2>
 <p>In Figure <a href="#fig:evicrates"><strong>??</strong></a>, I present the changes in average eviction rates across multi-family properties in Durham since 2004. Each data point is calculated by summing up all of the evictions that occurred in that property size in that year in Durham and dividing by the total number of dwelling units in Durham in that property size group.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALevicratesatsizes.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALevicratesatsizes.jpeg" alt="Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018" />
-<p class="caption">Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALevicratesatsizes.jpeg" alt="Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018" width="600px" />
+<p class="caption">
+Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018
+</p>
 </div>
 <p>First, it is evident that year is intimately related with eviction filing rates. Across all property sizes, we clearly see the elevated rates of eviction filings in the years leading up to the financial crisis, and the precipitous drop in eviction filing rates after 2011. We also see that these eviction rates vary quite drastically across different dwelling unit sizes, and the distributions of the eviction rates across time is also varied. Specifically, in the largest dwelling units, the max average eviction rate is a little under 3.5 percent, whereas in the tiniest dwelling units, the max average eviction rate reaches 10 percent.</p>
 <p>Furthermore, we also see that the trends in eviction rates vary. In the largest dwelling unit sizes, eviction rates gradually increased between 2004 and 2008, and eventually peaked in 2010, whereas in the smallest and tiniest property sizes, the eviction rate actually stayed near the same level between 2004 and 2009. Finally, in the past 2 years, eviction rates have increased across all property sizes, but not in the same relative manner. For example, relative to historical rates, the average eviction rate has spiked more dramatically in small and medium units than in tiny and large property sizes. Overall, these different suggest that different trends are present in different property sizes. While it may not be necessary to separate medium and small properties in my analysis since the range of eviction rates are quite comparable, it may be useful to treat large and tiny properties as separate groups.</p>
 
 <p>Next, I look at how eviction rates differ across racial and economic variables. In Figure <a href="#fig:dems"><strong>??</strong></a>, I calculate the average eviction rate by tract using the total number of evictions between 2004 and 2018 and dividing by the total number of multi-family dwellings in each tract, then scaling to get a yearly average eviction rate.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/FINALdemsgraphtract.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/FINALdemsgraphtract.jpeg" alt="The Impact of Eviction Rates on Different Demographics" />
-<p class="caption">The Impact of Eviction Rates on Different Demographics</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALdemsgraphtract.jpeg" alt="The Impact of Eviction Rates on Different Demographics" width="600px" />
+<p class="caption">
+The Impact of Eviction Rates on Different Demographics
+</p>
 </div>
 <p>I find that the higher the percentage of African American residents and Hispanic residents in a tract, the higher the average eviction rate is. I also find that the eviction rate is slightly higher in more impoverished neighborhoods. Finally, the higher the percentage of white residents in a tract, the lower the average eviction rate is on average across tracts. It becomes clear through these graphs that demographics and eviction rates are highly correlated in Durham.</p>
 
@@ -541,16 +480,18 @@ Units Owned</th>
 </tbody>
 </table>
 <p>Next, I look at how the ownership of rental properties in Durham have changed since 2000 across different property sizes. In Figure <a href="#fig:corpchanges"><strong>??</strong></a>, we can see that since 2000, the proportion of properties under corporate ownership has increased across all property sizes. Specifically, in small and medium sized dwelling units, the proportion of properties under corporate ownership has flipped from being a minority (~40 percent) to a majority (between 62-72 percent) of ownership share. In the largest units, corporate ownership has increased from around 75 percent to 90 percent of all properties, and even in the tiniest units, we have seen corporate ownership increase slightly from around 30 percent to 35 percent ownership share.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/poster1.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/poster1.jpeg" alt="Proportion of Properties Under Corporate Ownership Across Different Property Sizes" />
-<p class="caption">Proportion of Properties Under Corporate Ownership Across Different Property Sizes</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/poster1.jpeg" alt="Proportion of Properties Under Corporate Ownership Across Different Property Sizes" width="600px" />
+<p class="caption">
+Proportion of Properties Under Corporate Ownership Across Different Property Sizes
+</p>
 </div>
 <p>Next, I look to see how ownership amongst corporate owners has changed: specifically, I am interested to see if more owners are based out-of-state. In Figure <a href="#fig:statechanges"><strong>??</strong></a>, we can see that the proportion of properties under corporate ownership that are based out-of-state has increased across all property sizes other than the smallest units, where it has stayed the same. In the largest property size, the proportion of properties owned by out-of-state corporates has risen from around 62 percent in 2000 to 80 percent in 2018. In the small and medium property sizes, out-of-state ownership has more than doubled from around 10 – 15 percent in 2000 to around 30 – 40 percent by 2018.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;Figures/posteroutofstatefinal.jpeg&quot;</span>)</code></pre>
-<div class="figure">
-<img src="Figures/posteroutofstatefinal.jpeg" alt="Proportion of Corporate Ownership Based Out-of-State" />
-<p class="caption">Proportion of Corporate Ownership Based Out-of-State</p>
+<div class="figure" style="text-align: center">
+<img src="Figures/posteroutofstatefinal.jpeg" alt="Proportion of Corporate Ownership Based Out-of-State" width="600px" />
+<p class="caption">
+Proportion of Corporate Ownership Based Out-of-State
+</p>
 </div>
 <p>Overall, there is concrete evidence that the composition of multi-family landlords in Durham has changed. In both of these graphs, we can see that the most drastic changes in ownership are occurring in the small and medium sized property units, though almost all property sizes are impacted in some way.</p>
 

@@ -30,24 +30,19 @@ We can also see that the higher the percentage of African American residents in 
 
 Next, I conduct a sensitivity analysis considering different transaction windows (Figure  \@ref(fig:transres1)). I find that overall, there is not a significant difference in the log-odds of the coefficients over time. Most importantly, we can see that the coefficient on the corporate owner is significantly below “1” across all periods, suggesting that the likelihood of an eviction by a corporate is consistently lower than the likelihood of eviction by an individual.  
 
-
-```r
-library(knitr)
-include_graphics(path = "Figures/FINALcorpindivtransrobus.jpeg")
-```
-
-![Sensitivity Analysis: Considering Different Transaction Windows](Figures/FINALcorpindivtransrobus.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALcorpindivtransrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="600px" />
+<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
+</div>
 
 I also check the robustness of this result by excluding LLP, LP and LLCs since it is not always clear whether these observations trace to individuals or corporates. In this model, the results also suggest that individuals are more likely to evict than corporates. A full output of the regression is presented in Appendix A, Table A7. 
 
 Finally, in Figure \@ref(fig:yearres1), we see that the fixed effect, Year, is meaningful. As expected, in the years of the financial crisis, we see higher likelihoods of eviction than we do in other years. Furthermore, we see that in 2018, specifically, the likelihood of an eviction has risen again. 
 
-
-```r
-include_graphics(path = "Figures/FINALyearfitcorpindiv.jpeg")
-```
-
-![Fixed Effect: Year](Figures/FINALyearfitcorpindiv.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALyearfitcorpindiv.jpeg" alt="Fixed Effect: Year" width="600px" />
+<p class="caption">Fixed Effect: Year</p>
+</div>
 
 I also check the robustness of these results across different property sizes. As seen in Figure \@ref(fig:evicrates) in my data section, the range of average eviction rates differs across property sizes: specifically, the tiniest properties boast the largest range in eviction rates while the largest properties boast the smallest range. As seen in Figure \@ref(fig:corpchanges) in my data section, corporates own the largest properties while individuals own the smallest properties. Thus, I worry it may be the case that corporates seem more likely to evict simply because they own higher proportions of properties with smaller eviction rates.  
 
@@ -96,19 +91,15 @@ Table \@ref(tab:res2) presents summary statistics for Betas 1 through 5. Specifi
 
 Similar to the first regression, the coefficient on the Percentage African American variable is large and positive, while the average household income variable, while statistically significant, is not practically meaningful. Based on the sensitivity analysis across transaction windows (see Figure \@ref(fig:transres2)), we can see that the coefficient on the corporate owner is significantly below “1” across all periods again, suggesting that this finding is robust. Because the confidence intervals of the other coefficients include 1, we cannot argue that owners evict more in either the pre or post period of a transaction.  
 
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALoutintransrobust.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="600px" />
+<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
+</div>
 
-```r
-include_graphics(path = "Figures/FINALoutintransrobust.jpeg")
-```
-
-![Sensitivity Analysis: Considering Different Transaction Windows](Figures/FINALoutintransrobust.jpeg)
-
-
-```r
-include_graphics(path = "Figures/FINALstateyeareffect.jpeg")
-```
-
-![Fixed Effect: Year](Figures/FINALstateyeareffect.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALstateyeareffect.jpeg" alt="Fixed Effect: Year" width="600px" />
+<p class="caption">Fixed Effect: Year</p>
+</div>
 
 Furthermore, from \@ref(fig:yearres2), we see that the year is again important. With Year = 2004 as the baseline, we can see that eviction filings were twice as likely in 2008 than they were in almost all other years.  
 
@@ -157,16 +148,12 @@ As we can see from Table \@ref(tab:res3), large investors, defined as corporates
 
 I consider the robustness of this result across different cutoff sizes for a large investor. I start with a lower bound set at ownership of 10 properties. As seen in Figure \@ref(fig:robusres3) below, my findings are robust across all different investor size cut-offs. I also consider the robustness of these results across different transaction windows, and again find that the coefficient on the large investor is robust (Figure \@ref(fig:transres3)). I do not consider different property sizes in this case since I calculate investor size by the total number of multi-family complexes owned by an entity, so divvying up by property size does not make sense for this analysis.
 
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALcutoffsrobustness.jpeg" alt="Sensitivity Analysis: Considering Different Cut-offs for Large Investor" width="600px" />
+<p class="caption">Sensitivity Analysis: Considering Different Cut-offs for Large Investor</p>
+</div>
 
-```r
-include_graphics(path = "Figures/FINALcutoffsrobustness.jpeg")
-```
-
-![Sensitivity Analysis: Considering Different Cut-offs for Large Investor](Figures/FINALcutoffsrobustness.jpeg)
-
-
-```r
-include_graphics(path = "Figures/FINALlargesmalltranswindowrobus.jpeg")
-```
-
-![Sensitivity Analysis: Considering Different Transaction Windows](Figures/FINALlargesmalltranswindowrobus.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALlargesmalltranswindowrobus.jpeg" alt="Sensitivity Analysis: Considering Different Transaction Windows" width="600px" />
+<p class="caption">Sensitivity Analysis: Considering Different Transaction Windows</p>
+</div>

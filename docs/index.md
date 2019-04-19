@@ -11,7 +11,7 @@ dus: 'Amy Herring'
 department: 'Department of Statistical Science'
 degree: 'Bachelor of Science in Statistical Science'
 title: 'Landlords and Evictions: Changes in the Ownership of Multi-Family Rental Properties and Its Impact on Housing Stability in Durham, NC'
-knit: "bookdown::render_book"
+knit: "bookdown::render_book" 
 site: bookdown::bookdown_site
 output: 
   thesisdowndss::thesis_gitbook: default

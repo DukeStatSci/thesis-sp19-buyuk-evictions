@@ -127,12 +127,10 @@ Table: (\#tab:sumstats) Summary Statistics on Multi-Family Rental Properties
 In Figure \@ref(fig:evicrates), I present the changes in average eviction rates across multi-family properties in Durham since 2004. Each data point is calculated by summing up all of the evictions that occurred in that property size in that year in Durham and dividing by the total number of dwelling units in Durham in that property size group. 
 
 
-
-```r
-include_graphics(path = "Figures/FINALevicratesatsizes.jpeg")
-```
-
-![Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018](Figures/FINALevicratesatsizes.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALevicratesatsizes.jpeg" alt="Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018" width="600px" />
+<p class="caption">Eviction Rates Across Different Property Sizes in Durham Between 2004 and 2018</p>
+</div>
 
 First, it is evident that year is intimately related with eviction filing rates. Across all property sizes, we clearly see the elevated rates of eviction filings in the years leading up to the financial crisis, and the precipitous drop in eviction filing rates after 2011. We also see that these eviction rates vary quite drastically across different dwelling unit sizes, and the distributions of the eviction rates across time is also varied. Specifically, in the largest dwelling units, the max average eviction rate is a little under 3.5 percent, whereas in the tiniest dwelling units, the max average eviction rate reaches 10 percent.  
 
@@ -142,12 +140,10 @@ Furthermore, we also see that the trends in eviction rates vary. In the largest 
 
 Next, I look at how eviction rates differ across racial and economic variables. In Figure \@ref(fig:dems), I calculate the average eviction rate by tract using the total number of evictions between 2004 and 2018 and dividing by the total number of multi-family dwellings in each tract, then scaling to get a yearly average eviction rate.  
 
-
-```r
-include_graphics(path = "Figures/FINALdemsgraphtract.jpeg")
-```
-
-![The Impact of Eviction Rates on Different Demographics](Figures/FINALdemsgraphtract.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/FINALdemsgraphtract.jpeg" alt="The Impact of Eviction Rates on Different Demographics" width="600px" />
+<p class="caption">The Impact of Eviction Rates on Different Demographics</p>
+</div>
 
 I find that the higher the percentage of African American residents and Hispanic residents in a tract, the higher the average eviction rate is. I also find that the eviction rate is slightly higher in more impoverished neighborhoods. Finally, the higher the percentage of white residents in a tract, the lower the average eviction rate is on average across tracts. It becomes clear through these graphs that demographics and eviction rates are highly correlated in Durham.
 
@@ -197,20 +193,16 @@ Table: (\#tab:ownership) Summary Statistics on Multi-Family Property Ownership
 
 Next, I look at how the ownership of rental properties in Durham have changed since 2000 across different property sizes. In Figure \@ref(fig:corpchanges), we can see that since 2000, the proportion of properties under corporate ownership has increased across all property sizes.  Specifically, in small and medium sized dwelling units, the proportion of properties under corporate ownership has flipped from being a minority (~40 percent) to a majority (between 62-72 percent) of ownership share. In the largest units, corporate ownership has increased from around 75 percent to 90 percent of all properties, and even in the tiniest units, we have seen corporate ownership increase slightly from around 30 percent to 35 percent ownership share. 
 
-
-```r
-include_graphics(path = "Figures/poster1.jpeg")
-```
-
-![Proportion of Properties Under Corporate Ownership Across Different Property Sizes](Figures/poster1.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/poster1.jpeg" alt="Proportion of Properties Under Corporate Ownership Across Different Property Sizes" width="600px" />
+<p class="caption">Proportion of Properties Under Corporate Ownership Across Different Property Sizes</p>
+</div>
 
 Next, I look to see how ownership amongst corporate owners has changed: specifically, I am interested to see if more owners are based out-of-state. In Figure \@ref(fig:statechanges), we can see that the proportion of properties under corporate ownership that are based out-of-state has increased across all property sizes other than the smallest units, where it has stayed the same. In the largest property size, the proportion of properties owned by out-of-state corporates has risen from around 62 percent in 2000 to 80 percent in 2018. In the small and medium property sizes, out-of-state ownership has more than doubled from around 10 – 15 percent in 2000 to around 30 – 40 percent by 2018.
 
-
-```r
-include_graphics(path = "Figures/posteroutofstatefinal.jpeg")
-```
-
-![Proportion of Corporate Ownership Based Out-of-State  ](Figures/posteroutofstatefinal.jpeg)
+<div class="figure" style="text-align: center">
+<img src="Figures/posteroutofstatefinal.jpeg" alt="Proportion of Corporate Ownership Based Out-of-State" width="600px" />
+<p class="caption">Proportion of Corporate Ownership Based Out-of-State</p>
+</div>
 
 Overall, there is concrete evidence that the composition of multi-family landlords in Durham has changed.  In both of these graphs, we can see that the most drastic changes in ownership are occurring in the small and medium sized property units, though almost all property sizes are impacted in some way. 

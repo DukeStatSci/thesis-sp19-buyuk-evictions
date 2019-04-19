@@ -2,72 +2,72 @@
 
 ## Appendix A: Corporate and Individual Transactions - 6-Month Windows
 
-```{r, fig.cap="Eviction Likelihoods in All Properties"}
+```{r, fig.cap="Eviction Likelihoods in All Properties",out.width = "600px",echo=FALSE,fig.align="center"}
 library(knitr)
 include_graphics(path = "Figures/A1.png")
 ```
 
-```{r, fig.cap="Eviction Likelihoods in Tiny Properties (2-4 Units)"}
+```{r, fig.cap="Eviction Likelihoods in Tiny Properties (2-4 Units)",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/A2.png")
 ```
 
-```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Tiny Property Transactions"}
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Tiny Property Transactions",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/A3.png")
 ```
 
-```{r, fig.cap="Eviction Likelihoods in Medium & Small Properties (5-49 Units)"}
+```{r, fig.cap="Eviction Likelihoods in Medium & Small Properties (5-49 Units)",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/A4.png")
 ```
 
-```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Medium & Small Property Transactions"}
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Medium & Small Property Transactions",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/A5.png")
 ```
 
-```{r, fig.cap="Eviction Likelihoods in Largest Properties (50+ Units)"}
+```{r, fig.cap="Eviction Likelihoods in Largest Properties (50+ Units)",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/A6.png")
 ```
 
-```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Large Property Transactions"}
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Large Property Transactions",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/A7.png")
 ```
 
-```{r, fig.cap="Eviction Likelihoods Without LLC, LP or LLPs Considered (Robustness Check)"}
+```{r, fig.cap="Eviction Likelihoods Without LLC, LP or LLPs Considered (Robustness Check)",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/A8.png")
 ```
 
 ## Appendix B: Out-of-State and In-State Corporate Transactions - 6-Month Window
 
-```{r, fig.cap="Eviction Likelihoods in All Properties"}
+```{r, fig.cap="Eviction Likelihoods in All Properties",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/B1.png")
 ```
 
-```{r, fig.cap="Eviction Likelihoods in Tiny Properties (2-4 Units)"}
+```{r, fig.cap="Eviction Likelihoods in Tiny Properties (2-4 Units)",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/B2.png")
 ```
 
-```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Tiny Property Transactions"}
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Tiny Property Transactions",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/B3.png")
 ```
 
-```{r, fig.cap="Eviction Likelihoods in Medium & Small Properties (5-49 Units)"}
+```{r, fig.cap="Eviction Likelihoods in Medium & Small Properties (5-49 Units)",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/B4.png")
 ```
 
-```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Medium & Small Property Transactions"}
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Medium & Small Property Transactions",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/B5.png")
 ```
 
-```{r, fig.cap="Eviction Likelihoods in Largest Properties (50+ Units)"}
+```{r, fig.cap="Eviction Likelihoods in Largest Properties (50+ Units)",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/B6.png")
 ```
 
-```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Large Property Transactions"}
+```{r, fig.cap="Total # of Monthly Eviction Rate Observations for Large Property Transactions",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/B7.png")
 ```
 
 ## Appendix C: Large and Small Investor Transactions (6-Month Window)
 
-```{r, fig.cap="Eviction Likelihoods Across All Properties"}
+```{r, fig.cap="Eviction Likelihoods Across All Properties",out.width = "600px",echo=FALSE,fig.align="center"}
 include_graphics(path = "Figures/C1.png")
 ```
 
