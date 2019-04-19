@@ -1,12 +1,5 @@
-<!--
-This is for including Chapter 1.  Notice that it's also good practice to name your chunk.  This will help you debug potential issues as you knit.  The chunk above is called intro and the one below is called chapter1.  Feel free to change the name of the Rmd file as you wish, but don't forget to change it here from chap1.Rmd.
--->
 
-<!--
-The {#rmd-basics} text after the chapter declaration will allow us to link throughout the document back to the beginning of Chapter 1.  These labels will automatically be generated (if not specified) by changing the spaces to hyphens and capital letters to lowercase.  Look for the reference to this label at the beginning of Chapter 2.
--->
-
-# Introduction 
+# Introduction
 
 Over the past decade, Durham residents have been struggling with the forces of gentrification redesigning their neighborhoods and often leaving them out of the blueprint. Gentrification, defined in one economics paper as the “influx of wealthier residents accompanied by rising property prices and the displacement of existing, lower-income residents” is a phenomenon evident in multiple cities across the nation (definition from Raymond et. al, 2016). A Gentrification Report released by Governing examining the nation’s 50 largest cities in 2015 found that nearly 20 percent of neighborhoods with lower incomes and home values experienced gentrification since 2000 (Maciag, 2015). My thesis aims to explore one factor related to the displacement of tenants in Durham: the rate at which formal evictions are filed by corporate and individual landlords, as specified by The Rental Housing Finance Survey[^1].  
 
